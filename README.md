@@ -20,3 +20,4 @@ The project follows a standard file structure, where the HTML file references th
 
 To run the project, open the `index.html` file in a web browser, ensuring that all the files and folders are located in the same directory. The virtual piano interface will be displayed, allowing you to click on the keys or use the keyboard to play musical notes.
 
+ps: you can directly download the audio files from the repository

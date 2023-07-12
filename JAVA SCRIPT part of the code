@@ -1,0 +1,35 @@
+
+const keys = document.querySelectorAll('.key');
+
+function playNote() {
+    const note = this.dataset.note;
+    const audio = new Audio(`sounds/${note}.mp3`);
+    audio.play();
+
+    this.classList.add('active');
+
+    setTimeout(() => {
+        this.classList.remove('active');
+    }, 300);
+}
+
+keys.forEach(key => {
+    key.addEventListener('click', playNote);
+    key.addEventListener('transitionend', () => {
+        key.classList.remove('highlight');
+    });
+});
+
+document.addEventListener('keydown', e => {
+    const key = document.querySelector(`.key[data-note="${e.key}"]`);
+    if (key) {
+        key.classList.add('active', 'highlight');
+        const note = key.dataset.note;
+        const audio = new Audio(`sounds/${note}.mp3`);
+        audio.play();
+    }
+});
+
+const backgroundVideo = document.querySelector('#background-video video');
+backgroundVideo.src = 'E:/piano/keyboard.mp4'; // Update the video file path
+backgroundVideo.volume = 0; // Mute the video

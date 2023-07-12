@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Virtual Piano</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="background-video">
+        <video autoplay loop muted>
+            <source src="E:/piano/keyboard.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div id="piano">
+        <div class="key white" data-note="A1"></div>
+        <div class="key black" data-note="Ab1"></div>
+        <div class="key white" data-note="B0"></div>
+        <div class="key white" data-note="B1"></div>
+        <div class="key black" data-note="Bb1"></div>
+        <div class="key white" data-note="C1"></div>
+        <div class="key black" data-note="C#1"></div>
+        <div class="key white" data-note="D1"></div>
+        <div class="key black" data-note="Db1"></div>
+        <div class="key white" data-note="E1"></div>
+        <div class="key black" data-note="Eb1"></div>
+        <div class="key white" data-note="F1"></div>
+        <div class="key black" data-note="F#1"></div>
+        <div class="key white" data-note="G1"></div>
+        <div class="key black" data-note="Gb1"></div>
+        <div class="key white" data-note="A2"></div>
+        <div class="key black" data-note="Ab2"></div>
+        <div class="key white" data-note="B2"></div>
+        <div class="key white" data-note="Bb2"></div>
+        <div class="key white" data-note="C2"></div>
+        <div class="key black" data-note="C#2"></div>
+        <div class="key white" data-note="D2"></div>
+        <div class="key black" data-note="Db2"></div>
+        <div class="key white" data-note="E2"></div>
+        <div class="key black" data-note="Eb2"></div>
+        <div class="key white" data-note="F2"></div>
+        <div class="key black" data-note="F#2"></div>
+        <div class="key white" data-note="G2"></div>
+        <div class="key black" data-note="Gb2"></div>
+        <div class="key white" data-note="A3"></div>
+        <div class="key black" data-note="Ab3"></div>
+        <div class="key white" data-note="B3"></div>
+        <div class="key white" data-note="Bb3"></div>
+        <div class="key white" data-note="C3"></div>
+        <div class="key black" data-note="C#3"></div>
+        <div class="key white" data-note="D3"></div>
+        <div class="key black" data-note="Db3"></div>
+        <div class="key white" data-note="E3"></div>
+        <div class="key black" data-note="Eb3"></div>
+        <div class="key white" data-note="F3"></div>
+        <div class="key black" data-note="F#3"></div>
+        <div class="key white" data-note="G3"></div>
+        <div class="key black" data-note="Gb3"></div>
+        <div class="key white" data-note="A4"></div>
+        <div class="key black" data-note="Ab4"></div>
+        <div class="key white" data-note="B4"></div>
+        <div class="key white" data-note="Bb4"></div>
+        <div class="key white" data-note="C4"></div>
+        <div class="key black" data-note="C#4"></div>
+        <div class="key white" data-note="D4"></div>
+        <div class="key black" data-note="Db4"></div>
+        <div class="key white" data-note="E4"></div>
+        <div class="key black" data-note="Eb4"></div>
+        <div class="key white" data-note="F4"></div>
+        <div class="key black" data-note="F#4"></div>
+        <div class="key white" data-note="G4"></div>
+        <div class="key black" data-note="Gb4"></div>
+        <div class="key white" data-note="A5"></div>
+        <div class="key black" data-note="Ab5"></div>
+        <div class="key white" data-note="B5"></div>
+        <div class="key white" data-note="Bb5"></div>
+        <div class="key white" data-note="C5"></div>
+        <div class="key black" data-note="C#5"></div>
+        <div class="key white" data-note="D5"></div>
+        <div class="key black" data-note="Db5"></div>
+        <div class="key white" data-note="E5"></div>
+        <div class="key black" data-note="Eb5"></div>
+        <div class="key white" data-note="F5"></div>
+        <div class="key black" data-note="F#5"></div>
+        <div class="key white" data-note="G5"></div>
+        <div class="key black" data-note="Gb5"></div>
+        <div class="key white" data-note="A6"></div>
+        <div class="key black" data-note="Ab6"></div>
+        <div class="key white" data-note="B6"></div>
+        <div class="key white" data-note="Bb6"></div>
+        <div class="key white" data-note="C6"></div>
+        <div class="key black" data-note="C#6"></div>
+        <div class="key white" data-note="D6"></div>
+        <div class="key black" data-note="Db6"></div>
+        <div class="key white" data-note="E6"></div>
+        <div class="key black" data-note="Eb6"></div>
+        <div class="key white" data-note="F6"></div>
+        <div class="key black" data-note="F#6"></div>
+        <div class="key white" data-note="G6"></div>
+        <div class="key black" data-note="Gb6"></div>
+        <div class="key white" data-note="A7"></div>
+        <div class="key black" data-note="Ab7"></div>
+        <div class="key white" data-note="B7"></div>
+        <div class="key white" data-note="Bb7"></div>
+        <div class="key white" data-note="C7"></div>
+        <div class="key black" data-note="C#7"></div>
+        <div class="key white" data-note="D7"></div>
+        <div class="key black" data-note="Db7"></div>
+        <div class="key white" data-note="E7"></div>
+        <div class="key black" data-note="Eb7"></div>
+        <div class="key white" data-note="F7"></div>
+        <div class="key black" data-note="F#7"></div>
+        <div class="key white" data-note="G7"></div>
+        <div class="key black" data-note="Gb7"></div>
+        <div class="key white" data-note="A"></div>
+        <div class="key black" data-note="Ab"></div>
+        <div class="key white" data-note="B"></div>
+        <div class="key white" data-note="Bb"></div>
+        <div class="key white" data-note="C"></div>
+        <div class="key black" data-note="C#"></div>
+        <div class="key white" data-note="D"></div>
+        <div class="key black" data-note="Db"></div>
+        <div class="key white" data-note="E"></div>
+        <div class="key black" data-note="Eb"></div>
+        <div class="key white" data-note="F"></div>
+        <div class="key black" data-note="F#"></div>
+        <div class="key white" data-note="G"></div>
+        <div class="key black" data-note="Gb"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
